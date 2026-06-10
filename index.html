@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TRENZ LITE® — Fresh Ideas | Complete LED Lighting Solutions</title>
+  <meta name="description" content="TRENZ LITE® by Ganpati Industry, Rajpura, Punjab — premium LED lighting solutions for home, office & industry. ISO 9001:2015, BIS & BEE approved. Since 2008." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ===================== SVG ICON SPRITE ===================== -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+      <symbol id="i-zap" viewBox="0 0 24 24"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+      <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6"/></symbol>
+      <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></symbol>
+      <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></symbol>
+      <symbol id="i-infinity" viewBox="0 0 24 24"><path d="M12 12c-2-2.67-4-4-6-4a4 4 0 0 0 0 8c2 0 4-1.33 6-4Zm0 0c2 2.67 4 4 6 4a4 4 0 0 0 0-8c-2 0-4 1.33-6 4Z"/></symbol>
+      <symbol id="i-bulb" viewBox="0 0 24 24"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.8.8 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></symbol>
+      <symbol id="i-downlight" viewBox="0 0 24 24"><path d="M12 2v4"/><path d="M5 16 8 6h8l3 10Z"/><path d="M9 16a3 3 0 0 0 6 0"/></symbol>
+      <symbol id="i-grid" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M3 15h18"/><path d="M9 3v18"/><path d="M15 3v18"/></symbol>
+      <symbol id="i-wall" viewBox="0 0 24 24"><path d="M8 2h8l2 7H6Z"/><path d="M12 9v5"/><path d="M8 14h8v3a4 4 0 0 1-8 0Z"/></symbol>
+      <symbol id="i-strip" viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></symbol>
+      <symbol id="i-factory" viewBox="0 0 24 24"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M17 18h1"/><path d="M12 18h1"/><path d="M7 18h1"/></symbol>
+      <symbol id="i-cpu" viewBox="0 0 24 24"><rect width="16" height="16" x="4" y="4" rx="2"/><rect width="6" height="6" x="9" y="9" rx="1"/><path d="M15 2v2"/><path d="M15 20v2"/><path d="M2 15h2"/><path d="M2 9h2"/><path d="M20 15h2"/><path d="M20 9h2"/><path d="M9 2v2"/><path d="M9 20v2"/></symbol>
+      <symbol id="i-flame" viewBox="0 0 24 24"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></symbol>
+      <symbol id="i-package" viewBox="0 0 24 24"><path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></symbol>
+      <symbol id="i-settings" viewBox="0 0 24 24"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></symbol>
+      <symbol id="i-hammer" viewBox="0 0 24 24"><path d="m15 12-8.5 8.5a2.12 2.12 0 1 1-3-3L12 9"/><path d="M17.64 15 22 10.64"/><path d="m20.91 11.7-1.25-1.25c-.6-.6-.93-1.4-.93-2.25v-.86L16.01 4.6a5.56 5.56 0 0 0-3.94-1.64H9l.92.82A6.18 6.18 0 0 1 12 8.4v1.56l2 2h2.47l2.26 1.91"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></symbol>
+      <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+      <symbol id="i-temp" viewBox="0 0 24 24"><path d="M14 4v10.54a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0Z"/></symbol>
+      <symbol id="i-drop" viewBox="0 0 24 24"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></symbol>
+      <symbol id="i-tag" viewBox="0 0 24 24"><path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"/><circle cx="7.5" cy="7.5" r="1" fill="currentColor" stroke="none"/></symbol>
+      <symbol id="i-palette" viewBox="0 0 24 24"><path d="M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z"/><circle cx="13.5" cy="6.5" r="1" fill="currentColor" stroke="none"/><circle cx="17.5" cy="10.5" r="1" fill="currentColor" stroke="none"/><circle cx="6.5" cy="12.5" r="1" fill="currentColor" stroke="none"/><circle cx="8.5" cy="7.5" r="1" fill="currentColor" stroke="none"/></symbol>
+      <symbol id="i-ruler" viewBox="0 0 24 24"><path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.41 2.41 0 0 1 0-3.4l2.6-2.6a2.41 2.41 0 0 1 3.4 0Z"/><path d="m14.5 12.5 2-2"/><path d="m11.5 9.5 2-2"/><path d="m8.5 6.5 2-2"/><path d="m17.5 15.5 2-2"/></symbol>
+      <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
+      <symbol id="i-route" viewBox="0 0 24 24"><circle cx="6" cy="19" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/><circle cx="18" cy="5" r="3"/></symbol>
+      <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .962 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.962 0z"/></symbol>
+      <symbol id="i-power" viewBox="0 0 24 24"><path d="M12 22v-5"/><path d="M9 8V2"/><path d="M15 8V2"/><path d="M18 8v5a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4V8Z"/></symbol>
+      <symbol id="i-chevron-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+      <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+    </defs>
+  </svg>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo" aria-label="TRENZ LITE Home">
+        <span class="logo__main"><span class="trenz">TRENZ</span> <span class="lite">LITE</span><span class="reg">®</span></span>
+        <span class="logo__tag">Fresh ideas</span>
+      </a>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button type="button" class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===================== HERO ===================== -->
+    <section class="hero">
+      <div class="hero__bg" id="heroBg">
+        <div class="hero__slide active" style="background-image:url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1920&q=80')"></div>
+        <div class="hero__slide" style="background-image:url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1920&q=80')"></div>
+        <div class="hero__slide" style="background-image:url('https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1920&q=80')"></div>
+        <div class="hero__slide" style="background-image:url('https://images.unsplash.com/photo-1531545514256-b1400bc00f31?auto=format&fit=crop&w=1920&q=80')"></div>
+      </div>
+      <div class="hero__overlay"></div>
+      <div class="hero__rays">
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+
+      <div class="container">
+        <div class="hero__content">
+          <span class="hero__badge">TRENZ LITE® — Fresh ideas</span>
+          <h1>Illuminate <br />Your <span class="accent">World</span></h1>
+          <p class="sub">Complete LED Lighting Solutions for Home, Office &amp; Industries — engineered in India with premium quality and energy efficiency.</p>
+          <div class="hero__cta">
+            <a href="products.html" class="btn btn--primary">Explore Products</a>
+            <a href="contact.html" class="btn btn--outline">Contact Us</a>
+          </div>
+        </div>
+      </div>
+
+      <a href="#categories" class="hero__scroll" aria-label="Scroll down">
+        <svg class="svg-ic ic-md"><use href="#i-chevron-down"/></svg>
+      </a>
+    </section>
+
+    <!-- ===================== TRUST BADGES ===================== -->
+    <section class="trust">
+      <div class="container">
+        <div class="trust__grid">
+          <div class="trust__item">
+            <span class="trust__icon"><svg class="svg-ic ic-lg"><use href="#i-award"/></svg></span>
+            <div><strong>ISO 9001:2015</strong><span>Certified Quality</span></div>
+          </div>
+          <div class="trust__item">
+            <span class="trust__icon"><svg class="svg-ic ic-lg"><use href="#i-shield"/></svg></span>
+            <div><strong>BIS Approved</strong><span>Bureau of Indian Standards</span></div>
+          </div>
+          <div class="trust__item">
+            <span class="trust__icon"><svg class="svg-ic ic-lg"><use href="#i-zap"/></svg></span>
+            <div><strong>BEE Approved</strong><span>Energy Star Rated</span></div>
+          </div>
+          <div class="trust__item">
+            <span class="trust__icon"><svg class="svg-ic ic-lg"><use href="#i-clock"/></svg></span>
+            <div><strong>Since 2008</strong><span>15+ Years of Excellence</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PRODUCT CATEGORIES ===================== -->
+    <section class="section" id="categories">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Our Product Range</h2>
+          <p>Best lighting solutions for every space — from cozy homes to large industries.</p>
+        </div>
+
+        <div class="cat-grid">
+          <article class="cat-card reveal">
+            <span class="cat-card__icon"><svg class="svg-ic ic-xl"><use href="#i-bulb"/></svg></span>
+            <h3>LED Lamps</h3>
+            <p>Alina Series — energy-efficient home lamps from 9W to 50W with B22 cap.</p>
+            <a href="products.html" class="cat-card__link">View Products →</a>
+          </article>
+
+          <article class="cat-card cat-card--dark reveal">
+            <span class="cat-card__icon"><svg class="svg-ic ic-xl"><use href="#i-downlight"/></svg></span>
+            <h3>Downlights &amp; COB</h3>
+            <p>Ellen, Rado, Edis, Maxo &amp; Dazz Series with advanced linear technology.</p>
+            <a href="products.html" class="cat-card__link">View Products →</a>
+          </article>
+
+          <article class="cat-card reveal">
+            <span class="cat-card__icon"><svg class="svg-ic ic-xl"><use href="#i-grid"/></svg></span>
+            <h3>Panel Lights</h3>
+            <p>Trio Backlit, Eco Panel, Rigid &amp; Surface Panel in multiple CCT options.</p>
+            <a href="products.html" class="cat-card__link">View Products →</a>
+          </article>
+
+          <article class="cat-card cat-card--dark reveal">
+            <span class="cat-card__icon"><svg class="svg-ic ic-xl"><use href="#i-sun"/></svg></span>
+            <h3>Flood Lights</h3>
+            <p>Fighter &amp; Glitter Series — IP65 rated, high impact polycarbonate housing.</p>
+            <a href="products.html" class="cat-card__link">View Products →</a>
+          </article>
+
+          <article class="cat-card reveal">
+            <span class="cat-card__icon"><svg class="svg-ic ic-xl"><use href="#i-wall"/></svg></span>
+            <h3>Wall Lights</h3>
+            <p>Ray, WAW &amp; K-Type Series — IP65 outdoor wall mounted lighting.</p>
+            <a href="products.html" class="cat-card__link">View Products →</a>
+          </article>
+
+          <article class="cat-card cat-card--dark reveal">
+            <span class="cat-card__icon"><svg class="svg-ic ic-xl"><use href="#i-strip"/></svg></span>
+            <h3>Strip Lights &amp; Drivers</h3>
+            <p>Pearl LED Strip, Rope Light &amp; reliable 12V LED strip drivers.</p>
+            <a href="products.html" class="cat-card__link">View Products →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== WHY CHOOSE / FEATURES ===================== -->
+    <section class="section section--light">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Why Choose TRENZ LITE</h2>
+          <p>Premium engineering, dependable performance, and complete in-house manufacturing.</p>
+        </div>
+
+        <div class="features">
+          <div class="feature reveal">
+            <div class="feature__icon"><svg class="svg-ic ic-xl"><use href="#i-leaf"/></svg></div>
+            <h4>Eco Friendly</h4>
+            <p>BEE rated with low power consumption.</p>
+          </div>
+          <div class="feature reveal">
+            <div class="feature__icon"><svg class="svg-ic ic-xl"><use href="#i-sun"/></svg></div>
+            <h4>Bright Light</h4>
+            <p>High lumen output for every space.</p>
+          </div>
+          <div class="feature reveal">
+            <div class="feature__icon"><svg class="svg-ic ic-xl"><use href="#i-wrench"/></svg></div>
+            <h4>Easy Installation</h4>
+            <p>Plug &amp; play design saves time.</p>
+          </div>
+          <div class="feature reveal">
+            <div class="feature__icon"><svg class="svg-ic ic-xl"><use href="#i-infinity"/></svg></div>
+            <h4>Long Life</h4>
+            <p>Up to 50,000 hours of lighting.</p>
+          </div>
+        </div>
+
+        <div class="stats stats--light">
+          <div class="reveal">
+            <div class="stat__num"><span data-count="15">0</span><span class="suffix">+</span></div>
+            <div class="stat__label">Years of Excellence</div>
+          </div>
+          <div class="reveal">
+            <div class="stat__num"><span data-count="50000">0</span><span class="suffix">+</span></div>
+            <div class="stat__label">Hours LED Life</div>
+          </div>
+          <div class="reveal">
+            <div class="stat__num"><span data-count="28">0</span><span class="suffix">+</span></div>
+            <div class="stat__label">Product Lines</div>
+          </div>
+          <div class="reveal">
+            <div class="stat__num">1 <span class="suffix">Yr</span></div>
+            <div class="stat__label">Warranty Assured</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT SNAPSHOT ===================== -->
+    <section class="section">
+      <div class="container">
+        <div class="split">
+          <div class="split__visual reveal">
+            <svg class="svg-ic bulb"><use href="#i-bulb"/></svg>
+          </div>
+          <div class="split__content reveal">
+            <span class="eyebrow">Who We Are</span>
+            <h2>India's Trusted LED Lighting Brand</h2>
+            <p>TRENZ LITE® is a prominent brand of Ganpati Industry based in Rajpura, Punjab, India. Serving clients since 2008, we are the foremost manufacturer of an exclusive range of LED lighting products — LED Lamps, COB Lights, Concealed Lights, Panel Lights, Flood Lights, Architecture Lights &amp; many more. Not only made in India, but at very competitive prices, with complete A-to-Z in-house manufacturing solutions.</p>
+            <div class="cert-row">
+              <span class="cert-pill"><svg class="svg-ic ic-sm"><use href="#i-shield"/></svg> ISO 9001:2015</span>
+              <span class="cert-pill"><svg class="svg-ic ic-sm"><use href="#i-shield"/></svg> BIS Approved</span>
+              <span class="cert-pill"><svg class="svg-ic ic-sm"><use href="#i-zap"/></svg> BEE Approved</span>
+            </div>
+            <a href="about.html" class="btn btn--red-outline">Learn More About Us →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FEATURED PRODUCTS ===================== -->
+    <section class="section section--light">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Featured Products</h2>
+          <p>A glimpse of our most popular lighting solutions across categories.</p>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card reveal">
+            <div class="product-card__media">
+              <svg class="svg-ic pc-fallback"><use href="#i-bulb"/></svg>
+              <img class="product-card__img" src="https://picsum.photos/seed/tlf1/600/420" alt="LED Lamp Alina" loading="lazy" onerror="this.remove()" />
+              <span class="product-card__cat">LED Lamp</span>
+            </div>
+            <div class="product-card__body">
+              <h3>LED Lamp Alina</h3>
+              <p class="product-card__model">AN600 – AN5000</p>
+              <ul class="product-card__specs">
+                <li><svg class="svg-ic ic-sm"><use href="#i-zap"/></svg> 9W – 50W</li>
+                <li><svg class="svg-ic ic-sm"><use href="#i-temp"/></svg> 6.5K CCT · B22 Cap</li>
+                <li><svg class="svg-ic ic-sm"><use href="#i-tag"/></svg> MRP from ₹100</li>
+              </ul>
+              <div class="product-card__foot"><span class="warranty-badge">1 Yr Warranty</span><a href="contact.html" class="btn btn--red-outline btn--sm">Enquire →</a></div>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <div class="product-card__media">
+              <svg class="svg-ic pc-fallback"><use href="#i-downlight"/></svg>
+              <img class="product-card__img" src="https://picsum.photos/seed/tlf2/600/420" alt="Tulip Spot Light" loading="lazy" onerror="this.remove()" />
+              <span class="product-card__cat">Spot Light</span>
+            </div>
+            <div class="product-card__body">
+              <h3>Tulip Spot Light</h3>
+              <p class="product-card__model">TULIP 200</p>
+              <ul class="product-card__specs">
+                <li><svg class="svg-ic ic-sm"><use href="#i-zap"/></svg> 2W</li>
+                <li><svg class="svg-ic ic-sm"><use href="#i-temp"/></svg> 3K / 4K / 6.5K</li>
+                <li><svg class="svg-ic ic-sm"><use href="#i-ruler"/></svg> 36mm Cutout</li>
+              </ul>
+              <div class="product-card__foot"><span class="warranty-badge">2 Yr Warranty</span><a href="contact.html" class="btn btn--red-outline btn--sm">Enquire →</a></div>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <div class="product-card__media">
+              <svg class="svg-ic pc-fallback"><use href="#i-downlight"/></svg>
+              <img class="product-card__img" src="https://picsum.photos/seed/tlf3/600/420" alt="Ellen COB Downlight" loading="lazy" onerror="this.remove()" />
+              <span class="product-card__cat">Downlight</span>
+            </div>
+            <div class="product-card__body">
+              <h3>Ellen COB Downlight</h3>
+              <p class="product-card__model">Surface Striker LED</p>
+              <ul class="product-card__specs">
+                <li><svg class="svg-ic ic-sm"><use href="#i-zap"/></svg> COB Technology</li>
+                <li><svg class="svg-ic ic-sm"><use href="#i-temp"/></svg> Multiple CCT</li>
+                <li><svg class="svg-ic ic-sm"><use href="#i-sparkle"/></svg> Surface Mounted</li>
+              </ul>
+              <div class="product-card__foot"><span class="warranty-badge">1 Yr Warranty</span><a href="contact.html" class="btn btn--red-outline btn--sm">Enquire →</a></div>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <div class="product-card__media">
+              <svg class="svg-ic pc-fallback"><use href="#i-grid"/></svg>
+              <img class="product-card__img" src="https://picsum.photos/seed/tlf4/600/420" alt="Trio Backlit Panel 3-in-1" loading="lazy" onerror="this.remove()" />
+              <span class="product-card__cat">Panel Light</span>
+            </div>
+            <div class="product-card__body">
+              <h3>Trio Backlit 3-in-1</h3>
+              <p class="product-card__model">350 / 540 / 660</p>
+              <ul class="product-card__specs">
+                <li><svg class="svg-ic ic-sm"><use href="#i-palette"/></svg> Colour change on each click</li>
+                <li><svg class="svg-ic ic-sm"><use href="#i-temp"/></svg> 3K / 4K / 6.5K</li>
+                <li><svg class="svg-ic ic-sm"><use href="#i-sparkle"/></svg> Backlit Panel</li>
+              </ul>
+              <div class="product-card__foot"><span class="warranty-badge">2 Yr Warranty</span><a href="contact.html" class="btn btn--red-outline btn--sm">Enquire →</a></div>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <div class="product-card__media">
+              <svg class="svg-ic pc-fallback"><use href="#i-sun"/></svg>
+              <img class="product-card__img" src="https://picsum.photos/seed/tlf5/600/420" alt="Fighter Flood Light" loading="lazy" onerror="this.remove()" />
+              <span class="product-card__cat">Flood Light</span>
+            </div>
+            <div class="product-card__body">
+              <h3>Fighter Flood Light</h3>
+              <p class="product-card__model">IP65 Series</p>
+              <ul class="product-card__specs">
+                <li><svg class="svg-ic ic-sm"><use href="#i-drop"/></svg> IP65 Rated</li>
+                <li><svg class="svg-ic ic-sm"><use href="#i-package"/></svg> Polycarbonate Housing</li>
+                <li><svg class="svg-ic ic-sm"><use href="#i-sun"/></svg> Outdoor Use</li>
+              </ul>
+              <div class="product-card__foot"><span class="warranty-badge">1 Yr Warranty</span><a href="contact.html" class="btn btn--red-outline btn--sm">Enquire →</a></div>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <div class="product-card__media">
+              <svg class="svg-ic pc-fallback"><use href="#i-wall"/></svg>
+              <img class="product-card__img" src="https://picsum.photos/seed/tlf6/600/420" alt="Ray LED Wall Light" loading="lazy" onerror="this.remove()" />
+              <span class="product-card__cat">Wall Light</span>
+            </div>
+            <div class="product-card__body">
+              <h3>Ray LED Wall Light</h3>
+              <p class="product-card__model">RAY 300 – RAY 1500</p>
+              <ul class="product-card__specs">
+                <li><svg class="svg-ic ic-sm"><use href="#i-zap"/></svg> 3W – 15W</li>
+                <li><svg class="svg-ic ic-sm"><use href="#i-drop"/></svg> IP65 Rated</li>
+                <li><svg class="svg-ic ic-sm"><use href="#i-tag"/></svg> MRP from ₹320</li>
+              </ul>
+              <div class="product-card__foot"><span class="warranty-badge">1 Yr Warranty</span><a href="contact.html" class="btn btn--red-outline btn--sm">Enquire →</a></div>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <div class="product-card__media">
+              <svg class="svg-ic pc-fallback"><use href="#i-sun"/></svg>
+              <img class="product-card__img" src="https://picsum.photos/seed/tlf7/600/420" alt="Glitter Flood Light" loading="lazy" onerror="this.remove()" />
+              <span class="product-card__cat">Flood Light</span>
+            </div>
+            <div class="product-card__body">
+              <h3>Glitter Flood Light</h3>
+              <p class="product-card__model">IP65 Series</p>
+              <ul class="product-card__specs">
+                <li><svg class="svg-ic ic-sm"><use href="#i-drop"/></svg> IP65 · High Impact</li>
+                <li><svg class="svg-ic ic-sm"><use href="#i-zap"/></svg> 10W &amp; above</li>
+                <li><svg class="svg-ic ic-sm"><use href="#i-tag"/></svg> MRP from ₹1250</li>
+              </ul>
+              <div class="product-card__foot"><span class="warranty-badge">1 Yr Warranty</span><a href="contact.html" class="btn btn--red-outline btn--sm">Enquire →</a></div>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <div class="product-card__media">
+              <svg class="svg-ic pc-fallback"><use href="#i-grid"/></svg>
+              <img class="product-card__img" src="https://picsum.photos/seed/tlf8/600/420" alt="Surface LED Panel" loading="lazy" onerror="this.remove()" />
+              <span class="product-card__cat">Panel Light</span>
+            </div>
+            <div class="product-card__body">
+              <h3>Surface LED Panel</h3>
+              <p class="product-card__model">SFP 600 – SFP 1800</p>
+              <ul class="product-card__specs">
+                <li><svg class="svg-ic ic-sm"><use href="#i-zap"/></svg> 6W – 18W</li>
+                <li><svg class="svg-ic ic-sm"><use href="#i-ruler"/></svg> 90mm – 155mm</li>
+                <li><svg class="svg-ic ic-sm"><use href="#i-tag"/></svg> MRP from ₹300</li>
+              </ul>
+              <div class="product-card__foot"><span class="warranty-badge">1 Yr Warranty</span><a href="contact.html" class="btn btn--red-outline btn--sm">Enquire →</a></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== STATS COUNTER (dark) ===================== -->
+    <section class="section section--dark">
+      <div class="container">
+        <div class="stats">
+          <div class="reveal">
+            <div class="stat__num"><span data-count="15">0</span><span class="suffix">+</span></div>
+            <div class="stat__label">Years of Excellence</div>
+          </div>
+          <div class="reveal">
+            <div class="stat__num"><span data-count="28">0</span><span class="suffix">+</span></div>
+            <div class="stat__label">Product Categories</div>
+          </div>
+          <div class="reveal">
+            <div class="stat__num"><span data-count="1000">0</span><span class="suffix">+</span></div>
+            <div class="stat__label">Happy Dealers</div>
+          </div>
+          <div class="reveal">
+            <div class="stat__num"><span data-count="50000">0</span></div>
+            <div class="stat__label">Hours LED Life</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CTA BANNER ===================== -->
+    <section class="cta-banner">
+      <div class="container reveal">
+        <h2>Ready to Illuminate Your Space?</h2>
+        <p>Get a quote or reach out to our team today.</p>
+        <a href="contact.html" class="btn btn--light">Contact Us Now →</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="logo">
+            <span class="logo__main"><span class="trenz">TRENZ</span> <span class="lite">LITE</span><span class="reg">®</span></span>
+            <span class="logo__tag">Fresh ideas</span>
+          </div>
+          <div class="footer__about">
+            <span class="lead">Complete Lighting Solutions</span>
+            A prominent brand of Ganpati Industry, manufacturing premium LED lighting in Rajpura, Punjab since 2008.
+          </div>
+          <div class="footer__certs">
+            <span>ISO 9001:2015</span>
+            <span>BIS</span>
+            <span>BEE</span>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Products</h4>
+          <ul class="footer__links">
+            <li><a href="products.html">LED Lamps</a></li>
+            <li><a href="products.html">Downlights</a></li>
+            <li><a href="products.html">Panel Lights</a></li>
+            <li><a href="products.html">Flood Lights</a></li>
+            <li><a href="products.html">Wall Lights</a></li>
+            <li><a href="products.html">Strip Lights</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Get In Touch</h4>
+          <ul class="footer__contact">
+            <li><span class="ic"><svg class="svg-ic ic-sm"><use href="#i-pin"/></svg></span> Ganpati Industry, Rajpura, Punjab, India</li>
+            <li><span class="ic"><svg class="svg-ic ic-sm"><use href="#i-globe"/></svg></span> www.trenzlite.com</li>
+            <li><span class="ic"><svg class="svg-ic ic-sm"><use href="#i-mail"/></svg></span> info@trenzlite.com</li>
+            <li><span class="ic"><svg class="svg-ic ic-sm"><use href="#i-phone"/></svg></span> +91 XXXXX XXXXX</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        © 2025 <strong>TRENZ <span class="lite">LITE</span>®</strong> | Ganpati Industry | All Rights Reserved
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
